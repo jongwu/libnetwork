@@ -4,7 +4,7 @@ go:
   - 1.8.x
   - 1.9.x
 
-go_import_patch github.com/docker/libnetwork
+go_import_patch: github.com/docker/libnetwork
 
 sudo: required
 service:
