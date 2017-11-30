@@ -7,6 +7,10 @@ go:
 go_import_patch: github.com/docker/libnetwork
 
 sudo: required
+
+befor_install:
+  - sudo modprobe ip_vs
+
 service:
   - docker
 
