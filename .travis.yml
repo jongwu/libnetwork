@@ -11,13 +11,9 @@ services:
 
 
 before_install:
-#  - echo "deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
-  - sudo apt-get -qq update
-#  - sudo apt-get install -y libapparmor-dev libseccomp-dev/trusty-backports
-#  - go get -u github.com/golang/lint/golint
-#  - go get -u github.com/vbatts/git-validation
+#  - sudo apt-get -qq update
   - sudo modprobe ip_vs
-  - env | grep TRAVIS_
+ # - env | grep TRAVIS_
 
 script:
   - make build 
